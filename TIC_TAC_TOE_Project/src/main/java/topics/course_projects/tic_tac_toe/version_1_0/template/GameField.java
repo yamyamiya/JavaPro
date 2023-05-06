@@ -104,8 +104,8 @@ public class GameField {
         if (input.length != 2) return false;
         // 3. Parse the coordinates into the int type. Return false if any exception occurred during that.
         try {
-            x = Integer.parseInt(input[0])-1;
-            y = Integer.parseInt(input[1])-1;
+            x = Integer.parseInt(input[0]) - 1;
+            y = Integer.parseInt(input[1]) - 1;
         } catch (Exception e) {
             return false;
         }
@@ -247,13 +247,13 @@ public class GameField {
      */
     boolean checkDiagonals(char symbol) {
         for (int i = 0; i < field.length; i++) {
-            if (field[i][i] == symbol)
+            if (field[i][i] == symbol) {
                 if (i == field.length - 1) {
                     return true;
-                } else {
-                    break;
                 }
-
+            } else {
+                break;
+            }
         }
         for (int i = 0; i < field.length; i++) {
             if (field[i][field.length - i - 1] == symbol) {

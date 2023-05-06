@@ -38,6 +38,7 @@ public class TicTacToe {
                 if(gameField.isWin(playersList[i].getSymbol().getValue())){
                     System.out.println(playersList[i].getName()+" has won!");
                     isGameOver=true;
+                    break;
                 }
                 if(gameField.isFieldFull()){
                     System.out.println("Draw!");

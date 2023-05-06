@@ -66,7 +66,7 @@ public class HumanPlayer implements Player {
      */
     @Override
     public String makeMove() {
-        System.out.println("Please enter your coordinates coordinates in string format with a space as a splitter. Example: - \"2 3\")");
+        System.out.println("Please enter your coordinates in string format with a space as a splitter. Example: - \"2 3\")");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
         // Logic of the method:
