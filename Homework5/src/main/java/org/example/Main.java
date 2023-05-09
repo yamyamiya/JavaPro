@@ -12,7 +12,7 @@ public class Main {
 
 
 //В цикле наполнить лист 10 миллионами значений (от 1 до 10000000)
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 10000000; i++) {
             list.add(i);
         }
         int listSize = list.size();
