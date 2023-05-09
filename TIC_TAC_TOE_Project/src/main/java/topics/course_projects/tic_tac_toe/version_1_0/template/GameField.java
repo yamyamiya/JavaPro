@@ -98,7 +98,7 @@ public class GameField {
         int y;
 
 
-//       field[coordinates.charAt(0)][coordinates.charAt(2)]
+
 
         // 2. Return false if size of the array is different from 2.
         if (input.length != 2) return false;
