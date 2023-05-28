@@ -47,7 +47,7 @@ public class GameField {
      * Первоначальное заполнение игрового поля.
      */
     public void initialize() {
-        field = new char[FIELD_SIZE][FIELD_SIZE];
+        field = new char[FIELD_SIZE][FIELD_SIZE ];
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field.length; j++) {
                 field[i][j] = EMPTY_CELL;
