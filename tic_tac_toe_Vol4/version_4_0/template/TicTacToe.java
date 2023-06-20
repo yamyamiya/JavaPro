@@ -75,6 +75,8 @@ public class TicTacToe {
                 }
                 if(field.isFieldFull()){
                     System.out.println("Draw!");
+                    isGameOver=true;
+                    break;
                 }
             }
         }
@@ -184,6 +186,9 @@ public class TicTacToe {
      */
     private static int getWinLength(int fieldSize) {
         int winLength;
+        if(fieldSize==3){
+            return 3;
+        }
         while (true) {
             System.out.println("Please enter the length of your win combination (integer number from 3 to " + fieldSize + "):");
             Scanner scanner = new Scanner(System.in);
