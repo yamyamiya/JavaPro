@@ -126,3 +126,10 @@ public class MySqlCustomerRepository implements CustomerRepository {
 
     }
 }
+
+
+// кроме того в AppConfig теперь такая строка вместо старой 
+// @Bean
+    // public CustomerRepository customerRepository() {
+    //     return new MySqlCustomerRepository();
+    // }
